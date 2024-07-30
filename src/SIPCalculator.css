@@ -1,0 +1,149 @@
+body {
+  color: cyan;
+  /* background-color: black; */
+  background-color:  rgb(24 24 27);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+section h1 {
+  font-size: 3rem;
+  color: rgb(0, 187, 255);
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+section label {
+  font-size: 1.5rem;
+}
+
+input {
+  font-size: 18px;
+  outline: none;
+  /* color: black; */
+  color: #fff;
+  margin: 10px 0 30px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover,
+input:focus {
+  border-color: rgb(50, 171, 255);
+  box-shadow: 0 0 5px rgba(50, 171, 255, 0.5);
+}
+
+div {
+  margin-right: 20px;
+}
+
+.small {
+  width: 50px;
+}
+
+.summary input {
+  /* color: #575555; */
+  color: #fff;
+  /* background-color: black; */
+  font-size: 23px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: rgb(50, 171, 255);
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 3px 5px 5px -4px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: rgb(50, 171, 255);
+  border: 2px solid rgb(50, 171, 255);
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 2.5rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section label,
+  input {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  .content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .btn {
+    font-size: 14.6px;
+    padding: 8px 16px;
+  }
+
+  .summary input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  label,
+  input {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .btn {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 6px 12px;
+    width: auto;
+  }
+
+  .summary input {
+    width: 100%;
+    font-size: 16px;
+  }
+}
