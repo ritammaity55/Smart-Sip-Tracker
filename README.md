@@ -1,4 +1,4 @@
-# SIP Calculator
+# SIP Tracker
 
 A simple React application to calculate the maturity amount, total investment, and profit gained from a Systematic Investment Plan (SIP). 
 
